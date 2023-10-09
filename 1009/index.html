@@ -1,14 +1,61 @@
 <html>
 <head>
+    <link rel="stylesheet" href="site.css"/>
     <title>MIS 3033 October 9 Nicole Harrison</title>
+
+    <style>
+        #div2{
+            background-color: pink;
+        }
+        #div3 {
+            background-color: lightpink;
+        }
+        #div4 {
+            background-color: hotpink;
+        }
+        #div5 {
+            background-color: deeppink;
+        }
+        #div6 {
+            background-color: mediumvioletred;
+        }
+    </style>
 </head>
 <body>
-<div style="width:200px;height:100px;background-color:deepskyblue; margin-left: 50px; padding-top:20px;padding-left:30px;">
-    Div1
-</div>
-<div style="width: 100px; height:300px; background-color:bisque; margin-top:30px;">
-    Div 2
-</div>
+    <span class="titlestyle">Box sizing</span>
+    <div style="color:black;padding-left:20px;box-sizing:content-box;" class="divstyle1 titlestyle">div1</div>
+
+    <div style="padding-left:20px;" class="divstyle1 titlestyle">div2</div>
+
+    <br />
+    <span class="titlestyle">CSS selectors</span>
+    
+    <div id="main" style="position:relative;background-color:cadetblue;height:400px;">
+
+        <div style="position:sticky;top:3px;" id="div1">div1</div>
+        <div id="div2">div2</div>
+        <div id="div3">div3</div>
+        <div style="position:absolute;right:0px;top:0px;" id="div4">div4</div>
+        <div style="position:relative;left:10px;top:10px;" id="div5">div5</div>
+        <div id="div6">div6</div>
+
+        <div id="menu" style="position:fixed;right:0px;top:100px; width:70px;height:60px;background-color:antiquewhite;">
+            Option 1 <br/>
+            Option 2 <br/>
+            Option 3 <br/>
+        </div>
+
+    </div>
+
+    
+
+
+    <div style="width:200px;height:100px;background-color:deepskyblue; margin-left: 50px; padding-top:20px;padding-left:30px;">
+        Div1
+    </div>
+    <div style="width: 100px; height:300px; background-color:bisque; margin-top:30px;">
+        Div 2
+    </div>
 
 </body>
 
