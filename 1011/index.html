@@ -2,77 +2,115 @@
 <head>
     <title>MIS 3033 October 11 Nicole Harrison</title>
     <style>
-        #maindiv{
-            background-color:aliceblue;
-            width:800px;
-            height:500px;
-
-            display:flex;
+        #maindiv {
+            width: 800px;
+            height: 500px;
+            display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            align-items:flex-end;
+            align-items: flex-end;
             margin-top: 50px;
         }
-        .d1{
-            width:100px;
-            height:120px;
-            margin-left:10px;
-            margin-top:10px;
-            background-color: dodgerblue;
+
+        .d1 {
+            width: 100px;
+            height: 120px;
+            margin-left: 10px;
+            margin-top: 10px;
         }
-        #webdiv{
-            background-color:antiquewhite;
+
+        #webdiv {
             width: 1000px;
-            margin-left:auto;
-            margin-right:auto;
+            margin-left: auto;
+            margin-right: auto;
         }
-        #footerdiv{
+
+        #footerdiv {
             height: 50px;
             background-color: aliceblue;
             color: darkgrey;
-            border-radius:5px;
-
-
-            display:flex;
-            flex-direction:row;
-            justify-content:center;
-            align-items:center;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
-        #bodydiv{
-            background-color:lightcoral;
-            display:flex;
-            flex-direction:row;
-        }
-        #leftdiv{
-            background-color:hotpink;
-        }
-        #rightdiv{
-            background-color:mediumspringgreen;
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            justify-content:center;
 
-            
-            border-width:2px;
+        #bodydiv {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #leftdiv {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #rightdiv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-width: 2px;
             border-style: solid;
             border-color: darkgrey;
-            border-radius:20px;
+            border-radius: 20px;
+        }
+
+        #title1 {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: lightblue;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
     <div id="webdiv">
-        web page
+        
+        <div id="headerdiv" style="display:flex;flex-direction:row;
+            justify-content:center;align-items:center">
+            <div style="font-size:30pt; color:dodgerblue; text-transform:uppercase; font-weight:bold;">
+                I love Programming!
+            </div>
+            <div>
+                <img src="a.svg" style="height:100px;"/>
+            </div>
+        </div>
+
         <div id="bodydiv">
             <div id="leftdiv">
-                left
+                <div id="up" style="width:480px; background-color:white;">
+                    <span id="title1">
+                        What I already learned:
+                    </span>
+                    <ul>
+                        <li>C#</li>
+                        <li>C# Entity Framework</li>
+                        <li>Database Sqlite</li>
+                        <li>HTML & CSS</li>
+                    </ul>
+                </div>
+                <div id="down" style="width:480px;">
+                    <span id="title2" style="font-size:20px;font-weight:bold;">
+                        What I am going to learn next:
+                    </span>
+
+                    <ol>
+                        <li>JavaScript</li>
+                        <li>BootStrap</li>
+                        <li>ASP.NET MVC</li>
+                        <li>Web REST API</li>
+                    </ol>
+
+                </div>
+
             </div>
             <div id="rightdiv">
                 <div style="color:dodgerblue;font-size:20pt;font-weight:bold">I love MIS3033</div>
                 <div>
-                    <img style="width:400px;" src="b.svg"/>
+                    <img style="width:400px;" src="b.svg" />
                 </div>
             </div>
         </div>
