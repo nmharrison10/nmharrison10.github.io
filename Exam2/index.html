@@ -1,16 +1,151 @@
 <html>
 <head>
-    <title>[Exam Code] Nicole Harrison Exam 2 MIS3033</title>
+    <title>[SCXJ] Nicole Harrison Exam 2 MIS3033</title>
+    <style>
+        .t {
+            text-transform: uppercase;
+            background-color: lightskyblue;
+            border-radius: 5px;
+        }
+
+        .b {
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        #footer {
+            height: 60px;
+            font-weight: bold;
+            font-size: 20px;
+            color: grey;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        #body {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #imgs {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .c {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #info {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+        }
+
+        #banner {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+        }
+
+        #header {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+    </style>
 </head>
 
 <body>
-    <img src="static/css.svg" style="height:100px" />
-    <img src="static/head1 (2).png" style="height:100px" />
-    <img src="static/head2 (2).png" style="height:100px" />
-    <img src="static/html.svg" style="height:100px" />
-    <img src="static/javascript.svg" style="height:100px" />
-    <img src="static/linkedin (1).png" style="height:100px" />
-    <img src="static/logo.svg" style="height:100px" />
-    <img src="static/sqlite.svg" style="height:100px" />
+    <div id="main" style="width:800px">
+
+        <div id="header">
+            <div id="name" class="b c" style="height:70px;width:200px;margin-right:10px">
+                <span>MIS 3033 Exam 2</span>
+                <span>Nicole Harrison</span>
+            </div>
+            <div id="code" class="b c" style="height:70px;width:200px">[SCXJ]</div>
+        </div>
+
+        <div id="banner" style="height:80px;" class="b">
+            <div id="pic">
+                <img src="static/head2 (2).png" style="height:60px;border-radius:50%;margin:10px" />
+            </div>
+            <div id="info">
+                <div style="width:150px">Nicole Harrison</div>
+                <div style="width:150px">MIS Student</div>
+            </div>
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="static/linkedin (1).png" style="height:30px" />
+                </a>
+            </div>
+        </div>
+
+        <div id="body">
+            <div id="left">
+
+                <div id="upper" class="b" style="width:510px;height:110px;">
+                    <span class="t">ABOUT ME:</span>
+                    <div>
+                        I am a MIS student. I like programming and I am good at C#. I leaned Entity Framework for
+                        Database Manipulations. I know HTML, CSS and I started to learn JavaScript. It is fun.
+                        Later I will learn C# .NET MVC Dynamic Web App development and Web API development.
+                    </div>
+                </div>
+
+                <div id="lower" class="b" style="width:510px;height:160px;">
+                    <span class="t">ACHIEVEMENTS</span>
+                    <div id="imgs" style="margin-top:10px" >
+                        <div class="b c">
+                            <img src="static/html.svg" style="height:100px" />
+                            <div>HTML</div>
+                        </div>
+                        <div class="b c">
+                            <img src="static/css.svg" style="height:100px" />
+                            <div>CSS</div>
+                        </div>
+                        <div class="b c">
+                            <img src="static/javascript.svg" style="height:100px" />
+                            <div>JavaScript</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="right" class="b" style="width:280px;">
+                <span class="t">RECENT NEWS</span>
+                <div>
+                    <ul>
+                        <li>Learned C#</li>
+                        <li>Learned Entity Framework</li>
+                        <li>
+                            Learned
+                            <img src="static/sqlite.svg" style="height:40px" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer" class="b">
+            <div style="margin-right:20px">Developed by Nicole Harrison for MIS 3033 Exam 2</div>
+            <div>
+                <img src="static/logo.svg" style="height:50px" />
+            </div>
+        </div>
+    </div>
 </body>
 </html>
